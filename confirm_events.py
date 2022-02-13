@@ -1,5 +1,5 @@
 """
-Draft script for sending a confirmation email to students when they sign up for BINFSOC events. 
+Draft script for sending a confirmation email to students when they sign up for BINFSOC events. Emails and passwords have been redacted for security purposes. 
 """
 
 from csv import reader 
@@ -37,7 +37,7 @@ with open('emails.csv', 'r') as read_obj:
     # Iterate over each row in the csv using reader object
     for row in csv_reader:
         # row variable is a list that represents a row in csv
-        FROM = "mufasasmith2@gmail.com"
+        FROM = "REDACTED"
         TO = row[3]
         SUBJECT = "Confirmation Email for Event"
         words = "You amazing person" if row[-1] == 'Cereal' else "You unbelievable psycopath"
@@ -56,7 +56,7 @@ with open('emails.csv', 'r') as read_obj:
             server = smtplib.SMTP_SSL("smtp.gmail.com", 465)
             server.ehlo()
             #server.starttls()
-            server.login("mufasasmith2@gmail.com", "W17A_DODO")
+            server.login("REDACTED", "REDACTED")
             server.sendmail(FROM, TO, message)
             server.close()
             print('successfully sent the mail')
