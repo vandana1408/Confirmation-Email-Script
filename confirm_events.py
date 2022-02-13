@@ -5,32 +5,6 @@ Draft script for sending a confirmation email to students when they sign up for 
 from csv import reader 
 import smtplib
 
-# def recieve_inputs(): 
-#     email = input("EMAIL: ")
-#     password = input("PASSWORD: ")
-#     subject = input("SUBJECT: ")
-#     text = input("TEXT: ")
-#     csv_file = input("FILE: ")
-    
-#     info = (email, password, subject, text, csv_file)
-    
-#     return info 
-
-# def email_people(info_tuple, to):
-#     messenger = info_tuple[0]
-#     subject = info_tuple[2]
-#     text = info_tuple[3]
-    
-#     message = f'From: {messenger}\nTo: {to}\nSubject: {subject}\n\n{text}'
-
-# def open_file(csv_file, text): 
-#     with open(csv_file, 'r') as read_obj: 
-#         csv_reader = reader(read_obj)
-        
-#         for row in csv_reader: 
-#             addressed_message = f"Hi, {row[1]}" + text 
-            
-
 with open('emails.csv', 'r') as read_obj:
     # pass the file object to reader() to get the reader object
     csv_reader = reader(read_obj)
