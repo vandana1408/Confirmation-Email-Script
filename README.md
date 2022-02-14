@@ -12,4 +12,5 @@ Things I hope to add onto this project:
 - Include my default signature into the email
 - Bcc and Cc inputs 
 - regex part to include the '@' for the email 
+- figure out a way to send mail without turning on "Allow Less Secure Apps" on Google account to maintain security. 
 - assertoric tests 
