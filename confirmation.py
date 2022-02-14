@@ -1,18 +1,11 @@
 """
 CONFIRMATION EMAIL SCRIPT
 
-Sending an email to a list of people from a csv file to confirm that they can attend an event. 
+Sending an email to a list of people from a csv file to confirm that they can attend an event. (ADD DOCSTRINGS SOON)
 """
 from csv import reader 
 import smtplib
 
-"""
-Need functions for the following: 
-    - Gathering Inputs
-    - Sending an email
-    - Opening the file and reading emails/first names 
-    - OPTIONAL: Craft message? 
-"""
 
 def receive_inputs(): 
     
